@@ -3,6 +3,7 @@
     --grey:#C4C5BA;
     --black:#1B1B1B;
     --green:#595f39;
+    --greenShadow:#3e4228;
     --font-family: Georgia, serif;
     --transition: 0.3s;
 }
@@ -123,9 +124,6 @@ p1 {
     margin-bottom: 20px;
 }
 
-.skills-container {
-}
-
 .technologies-grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -143,6 +141,11 @@ p1 {
     background-color: (--grey);
     box-shadow: 5px 5px 2.5px var(--green);
     border-radius: 7.5px;
+}
+
+.technologies-item:hover {
+    transform: scale(1.02);
+    transition: var(--transition);
 }
 
 .languages-grid {
@@ -163,6 +166,11 @@ p1 {
     box-shadow: 5px 5px 2.5px var(--green);
 }
 
+.languages-item:hover {
+    transform: scale(1.01);
+    transition: var(--transition);
+}
+
 .caption-image {
     width: 175px;
     height: 110px;
@@ -170,4 +178,72 @@ p1 {
 
 .caption-text {
     display: block
+}
+
+.projects {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display:block;
+}
+
+.projects h1 {
+    margin-bottom: 20px;
+}
+
+.profExp {
+    margin-bottom: 20px;
+}
+
+.profExp h4{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contact {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display:block;
+}
+
+.contact h1 {
+    margin-bottom: 20px;
+}
+
+.formContainer {
+    display:block;
+    text-align: center;
+}
+
+.contactForm {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 300px;
+}
+
+input[type=submit]:hover {
+  background-color: var(--greenShadow);
 }
