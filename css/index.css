@@ -277,5 +277,9 @@ input[type=submit]:hover {
 }
 
 .contact h3 {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
+}
+
+.contactImg {
+    width: 20px;
 }
